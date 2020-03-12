@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conceptual Model</title>
+</head>
+<body>
+	<div>
+		<h1>Conceptual Model Entities and Attributes</h1>
+	</div>
+	<div>
+		<h2>User</h2>
+		<ul>
+			<li>userEmail</li>
+			<li>userHash</li>
+			<li>userUsername (Primary Key)</li>
+			<li>userPhoneNumber</li>
+			<li>userLastSignIn</li>
+		</ul>
+	</div>
+	<div>
+		<h2>Post</h2>
+		<ul>
+			<li>postContent (Primary Key</li>
+			<li>postPicture</li>
+			<li>postLocation</li>
+			<li>postDate</li>
+			<li>postProfileID (Foreign Key)</li>
+		</ul>
+	</div>
+	<div>
+		<h2>Relations</h2>
+		<p>One user can like many posts</p>
+		<p>Many posts an be liked my many users</p>
+		<p>One post can be liked by many users</p>
+	</div>
+</body>
+</html>
