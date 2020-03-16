@@ -11,28 +11,37 @@
 	<div>
 		<h2>User</h2>
 		<ul>
-			<li>userEmail</li>
+			<li>userId (primary key</li>
 			<li>userHash</li>
-			<li>userUsername (Primary Key)</li>
-			<li>userPhoneNumber</li>
-			<li>userLastSignIn</li>
+			<li>userUsername</li>
+			<li>userProfilePic</li>
 		</ul>
 	</div>
 	<div>
 		<h2>Post</h2>
 		<ul>
-			<li>postContent (Primary Key</li>
-			<li>postPicture</li>
-			<li>postLocation</li>
+			<li>postUserId (Foreign Key</li>
+			<li>postId (primary key</li>
 			<li>postDate</li>
-			<li>postProfileID (Foreign Key)</li>
+			<li>postTime</li>
+			<li>postContent</li>
 		</ul>
 	</div>
 	<div>
+		<h2>Comment</h2>
+		<ul>
+			<li>commentId</li>
+			<li>commentUserId (Foreign Key)</li>
+			<li>commentPostId (Foreign Key)</li>
+			<li>commentContent</li>
+		</ul>
+	</div>
+
+	<div>
 		<h2>Relations</h2>
-		<p>One user can like many posts</p>
-		<p>Many posts an be liked my many users</p>
-		<p>One post can be liked by many users</p>
+		<p>One user can comment on many posts</p>
+		<p>Many posts can be commented my many users</p>
+		<p>One post can be commented on by many users</p>
 	</div>
 </body>
 </html>

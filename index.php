@@ -17,5 +17,8 @@
 	<div>
 		<a href="epic/conceptual-model.html">Conceptual Model</a>
 	</div>
+	<div>
+		<a href="epic/data-design-erd.html">ERD</a>
+	</div>
 </body>
 </html>
